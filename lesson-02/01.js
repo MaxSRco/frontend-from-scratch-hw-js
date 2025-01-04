@@ -8,11 +8,14 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+const isAdmin = false;
+const isVerifiedUser = true;
+const hasSpecialPermission = true;
+const hasTemporaryPass = false;
 
-let isAccess
+let isAccess = false;
 
 // your code
+isAccess = ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass));
+const message = isAccess ? 'Access granted' : 'Access denied';
+console.log(message);
