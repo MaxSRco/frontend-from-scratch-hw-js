@@ -32,5 +32,5 @@ const map = (array, callback) => {
         let rez = callback(element, i);
         resultArray.push(rez);
     }
-    return resultArray;
+    return resultArray
 }
