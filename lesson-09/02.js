@@ -34,13 +34,3 @@ const map = (array, callback) => {
     }
     return resultArray;
 }
-
-function doubleNumber(el, index) {
-    return el * 2;
-}
-
-function squareRoot(el) {
-    return parseFloat(Math.pow(el, 1/2).toFixed(3));
-}
-const numbers = [1, 2, 3, 4, 5]
-console.log(map(numbers, squareRoot));
